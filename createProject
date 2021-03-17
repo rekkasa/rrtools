@@ -5,8 +5,10 @@ NAME=$2
 
 WD=$DIR/$NAME
 
-mkdir -p $WD/code $WD/data $WD/.scratch $WD/submission
+mkdir -p $WD/code $WD/data/raw $WD/data/processed $WD/.scratch $WD/submission
 echo -e "Version: 1.0\nRestoreWorkspace: Default\nSaveWorkspace: Default\nAlwaysSaveHistory: Default\nEnableCodeIndexing: Yes\nUseSpacesForTab: Yes\nNumSpacesForTab: 2\nEncoding: UTF-8\nRnwWeave: Sweave\nLaTeX: pdfLaTeX" >> $WD/$NAME.Rproj
+
+touch $WD/code/README.md $WD/data/raw/README.md $WD/data/processed/README.md $WD/submission/README.md
 
 cd $WD && git init
 
