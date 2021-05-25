@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR=$1
+NAME=$2
+
+echo -e '#!/usr/bin/env Rscript\n\n# Description: \n# Output: \n# Depends: ' >> $DIR/$NAME
