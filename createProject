@@ -12,6 +12,6 @@ touch $WD/code/README.md $WD/data/raw/README.md $WD/data/processed/README.md $WD
 
 cd $WD && git init
 
-echo -e ".Rhistory\n.scratch" >> .gitignore
+echo -e ".Rhistory\n.scratch\n*.tiff" >> .gitignore
 
 git add . && git commit -m "Initialize"
